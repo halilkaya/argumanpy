@@ -1,0 +1,19 @@
+{
+  "base_url": "http://arguman.org/api/v1/",
+  "login_url": "http://arguman.org/api/v1/auth/login/",
+  "registration_url": "http://arguman.org/api/v1/auth/register/",
+  "arguments_url": "http://arguman.org/api/v1/arguments/",
+  "argument_detail_url": "http://arguman.org/api/v1/arguments/{argument_id}/",
+  "premises_url": "http://arguman.org/api/v1/arguments/{argument_id}/premises/",
+  "premise_detail_url": "http://arguman.org/api/v1/arguments/{argument_id}/premises/{premise_id}/",
+  "fallacy_url": "http://arguman.org/api/v1/arguments/{argument_id}/premises/{premise_id}/report/",
+  "support_url": "http://arguman.org/api/v1/arguments/{argument_id}/premises/{premise_id}/support/",
+  "user_url": "http://arguman.org/api/v1/user/",
+  "user_detail_url": "http://arguman.org/api/v1/users/{user_id}/",
+  "user_arguments_url": "http://arguman.org/api/v1/users/{user_id}/arguments/owner/",
+  "followers_url": "http://arguman.org/api/v1/users/{user_id}/followers/",
+  "public_newsfeed_url": "http://arguman.org/api/v1/newsfeed/public/",
+  "private_newsfeed_url": "http://arguman.org/api/v1/newsfeed/private/",
+  "notifications_url": "http://arguman.org/api/v1/notifications/",
+  "notifications_url": "http://arguman.org/api/v1/notifications/"
+}
