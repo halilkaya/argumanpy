@@ -7,10 +7,10 @@ Response model
 class Response(object):
 
     def __init__(self, obj=None):
-        self._count = obj['count'] if obj is not None else None
-        self._next = obj['next'] if obj is not None else None
-        self._previous = obj['previous'] if obj is not None else None
-        self._results = obj['results'] if obj is not None else None
+        self._count = obj['count'] if obj else None
+        self._next = obj['next'] if obj else None
+        self._previous = obj['previous'] if obj else None
+        self._results = obj['results'] if obj else None
         self.keys = ['count', 'next', 'previous', 'results']
 
 
@@ -77,19 +77,19 @@ Argument model
 class Argument(object):
 
     def __init__(self, obj=None):
-        self._id = obj['id'] if obj is not None else None
-        self._user = obj['user'] if obj is not None else None
-        self._title = obj['title'] if obj is not None else None
-        self._slug = obj['slug'] if obj is not None else None
-        self._description = obj['description'] if obj is not None else None
-        self._owner = obj['owner'] if obj is not None else None
-        self._sources = obj['sources'] if obj is not None else None
-        self._premises = obj['premises'] if obj is not None else None
-        self._date_creation = obj['date_creation'] if obj is not None else None
-        self._absolute_url = obj['absolute_url'] if obj is not None else None
-        self._report_count = obj['report_count'] if obj is not None else None
-        self._is_featured = obj['is_featured'] if obj is not None else None
-        self._is_published = obj['is_published'] if obj is not None else None
+        self._id = obj['id'] if obj else None
+        self._user = obj['user'] if obj else None
+        self._title = obj['title'] if obj else None
+        self._slug = obj['slug'] if obj else None
+        self._description = obj['description'] if obj else None
+        self._owner = obj['owner'] if obj else None
+        self._sources = obj['sources'] if obj else None
+        self._premises = obj['premises'] if obj else None
+        self._date_creation = obj['date_creation'] if obj else None
+        self._absolute_url = obj['absolute_url'] if obj else None
+        self._report_count = obj['report_count'] if obj else None
+        self._is_featured = obj['is_featured'] if obj else None
+        self._is_published = obj['is_published'] if obj else None
         self.keys = ['id', 'user', 'title', 'slug', 'description', 'owner',
                      'sources', 'premises', 'date_creation', 'absolute_url',
                      'report_count', 'is_featured', 'is_published']
@@ -284,15 +284,15 @@ Premise model
 class Premise(object):
 
     def __init__(self, obj=None):
-        self._id = obj['id'] if obj is not None else None
-        self._user = obj['user'] if obj is not None else None
-        self._text = obj['text'] if obj is not None else None
-        self._sources = obj['sources'] if obj is not None else None
-        self._parent = obj['parent'] if obj is not None else None
-        self._absolute_url = obj['absolute_url'] if obj is not None else None
-        self._premise_type = obj['premise_type'] if obj is not None else None
-        self._date_creation = obj['date_creation'] if obj is not None else None
-        self._supporters = obj['supporters'] if obj is not None else None
+        self._id = obj['id'] if obj else None
+        self._user = obj['user'] if obj else None
+        self._text = obj['text'] if obj else None
+        self._sources = obj['sources'] if obj else None
+        self._parent = obj['parent'] if obj else None
+        self._absolute_url = obj['absolute_url'] if obj else None
+        self._premise_type = obj['premise_type'] if obj else None
+        self._date_creation = obj['date_creation'] if obj else None
+        self._supporters = obj['supporters'] if obj else None
         self.keys = ['id', 'user', 'text', 'sources', 'parent', 'absolute_url',
                      'premise_type', 'date_creation', 'supporters']
 
@@ -430,10 +430,10 @@ User model
 class User(object):
 
     def __init__(self, obj=None):
-        self._id = obj['id'] if obj is not None else None
-        self._username = obj['username'] if obj is not None else None
-        self._absolute_url = obj['absolute_url'] if obj is not None else None
-        self._avatar = obj['avatar'] if obj is not None else None
+        self._id = obj['id'] if obj else None
+        self._username = obj['username'] if obj else None
+        self._absolute_url = obj['absolute_url'] if obj else None
+        self._avatar = obj['avatar'] if obj else None
         self.keys = ['id', 'username', 'absolute_url', 'avatar']
 
 
